@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!--Custom fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!--Custom fonts-->
+</head>
+
+<body class="sky noselect">
+    <div class="menu-container">
+        <div class="arrow-up">
+            <img src="img/ARROW_UP.png" width="1.75%">
+            <span class="menu-text">VOLUME UP</span>
+        </div>
+        <div class="music-change">
+            <img src="img/ARROW_LEFT.png" width="1.75%">
+            <img src="img/ARROW_RIGHT.png" width="1.75%">
+            <span class="menu-text">CHANGE MUSIC</span>
+        </div>
+        <div class="arrow-down">
+            <img src="img/ARROW_DOWN.png" width="1.75%">
+            <span class="menu-text">VOLUME DOWN</span>
+        </div>
+        <div class="space">
+            <img src="img/SPACE.png" width="4%">
+            <span class="menu-text" id="text">MUTE</span>
+        </div>
+    </div>
+
+    <div class="discord">
+        <a href="https://discord.gg/4VwXy4aDBd" target="_blank" rel="noopener noreferrer"
+            onclick="window.invokeNative('openUrl', 'https://discord.gg/4VwXy4aDBd');"><img src="img/Discord.png"></a>
+    </div>
+
+    <!-- <div class="tiktok">
+        <a href="https://www.youtube.com/@digitalrangertv" target="_blank" rel="noopener noreferrer"
+            onclick="window.invokeNative('openUrl', 'https://www.youtube.com/@digitalrangertv');"><img
+                src="img/Tiktok.png"></a>
+    </div>
+
+    <div class="website">
+        <a href="https://ko-fi.com/bebikdev" target="_blank" rel="noopener noreferrer"
+            onclick="window.invokeNative('openUrl', 'https://ko-fi.com/bebikdev');"><img src="img/Site.png"></a>
+    </div> -->
+
+
+    <div id="circleG">
+        <div class="shaded-text">JOINING SERVER</div>
+        <div id="circleG_1" class="circleG"></div>
+        <div id="circleG_2" class="circleG"></div>
+        <div id="circleG_3" class="circleG"></div>
+    </div>
+
+    <div class="scroll-box">
+        <div class="header c">
+            <span>STAFF TEAM</span>
+        </div>
+        <div id="staffList" class="clickable"></div>
+    </div>
+
+    <p class="namePlaceholder" id="namePlaceholder">
+        Welcome, <span style="color: #0084ff;"></span>! <span id="welcomeDisplay"></span>
+    </p>
+ 
+    <!--<div class="textbox">
+        <div class="textboxh">
+            <div class="heading-textbox">UPDATES / NEWS</div>
+            <div class="date">LAST UPDATED: 16:35 2023-06-07</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet <span class="blue-text">consectetur adipisicing</span> elit. Asperiores hic
+            temporibus nemo commodi
+            tempora dignissimos alias. Nisi ipsam magni voluptas <span class="blue-text">illo</span> exercitationem esse
+            quasi alias,
+            consequatur, deserunt quaerat est iusto.<br><br>
+            <span class="blue-text">Lorem</span>, ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum
+            temporibus, in, nesciunt
+            odio libero accusantium saepe amet id, <span class="blue-text">suscipit explicabo</span> voluptates fugiat
+            sit eum sunt maxime
+            ipsum adipisci a.
+        </p>
+    </div>
+
+    <div class="textbox2">
+        <div class="textboxh">
+            <div class="heading-textbox">BASIC SERVER INFORMATION</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet <span class="blue-text">consectetur adipisicing</span> elit. Asperiores hic
+            temporibus nemo commodi
+            tempora dignissimos alias. Nisi ipsam magni voluptas <span class="blue-text">illo</span> exercitationem esse
+            quasi alias,
+            consequatur, deserunt quaerat est iusto.<br><br>
+            <span class="blue-text">Lorem</span>, ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum
+            temporibus, in, nesciunt
+            odio libero accusantium saepe amet id, <span class="blue-text">suscipit explicabo</span> voluptates fugiat
+            sit eum sunt maxime
+            ipsum adipisci a.
+        </p>
+    </div> -->
+    <!-- <div class="load">
+        <div class="loader">
+            <div class="stroke"></div>
+            <div class="stroke"></div>
+            <div class="stroke"></div>
+        </div>
+
+        <div class="songname">
+            <div class="slide-right">
+                <p id="songname">Akacia - Electric [NCS Release]</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="video-background video-container noselect">
+        <!-- <iframe width="150%" height="150%"
+            src="https://www.youtube.com/embed/o9tVz3JbjEs?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1"
+            frameborder="0"></iframe> -->
+    </div>
+
+    <!--Video is changable. When you are inserting the video make sure that it is in embed format 
+           video I used: https://www.youtube.com/watch?v=o9tVz3JbjEs&ab_channel=GamingCZE11
+           Video that I used is completly FREE provided by author for this loading screen
+        -->
+
+    <div class="background noselect" class="noselect">
+        <div class="img-center" class="noselect">
+            <img id="serverLogo" src="logo/logo.png" width="300">
+        </div>
+    </div>
+
+    <!-- Song that I used is NCS song Akacia - Electric [NCS Release] 
+    original link for song:https://ncs.io/akaciaelectric
+    song is changable in a folder song -->
+    <audio id="loading" src="song/song2.mp3" autoplay="true" hidden="true" loop="true"></audio>
+    <div class="background">
+        <div class="img-center">
+        </div>
+    </div>
+
+    <script src="config/config.js"></script>
+    <script src="script/main.js"></script>
+
+</body>
+
+</html>
